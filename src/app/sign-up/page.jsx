@@ -1,5 +1,5 @@
 const SignUpPage = () => {
-  return <div>this is singup page</div>;
+  return <div className="w-full max-w-[2250px] px-20">this is singup page</div>;
 };
 
 export default SignUpPage;
