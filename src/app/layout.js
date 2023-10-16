@@ -1,4 +1,6 @@
+import GlobalProvider from '@/GlobalProvider/GlobalProvider'
 import { Poppins } from 'next/font/google'
+import { Toaster } from 'react-hot-toast'
 import './globals.css'
 
 const poppins = Poppins({
@@ -15,7 +17,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <div>
+          <GlobalProvider>
+            <Toaster />
+            {children}
+          </GlobalProvider>
+        </div>
+      </body>
     </html>
   )
 }
