@@ -1,5 +1,11 @@
+import Slider from "@/Components/Home/Banner/Slider";
+
 const HomePage = () => {
-  return <div>This is home page </div>;
+  return (
+    <div>
+      <Slider />
+    </div>
+  );
 };
 
 export default HomePage;
