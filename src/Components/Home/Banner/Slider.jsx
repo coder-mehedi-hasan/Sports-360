@@ -18,7 +18,7 @@ const bannerImages = [{ image: cricket }, { image: football }, { image: cricketG
 
 const Slider = () => {
   return (
-    <div>
+    <div className="w-full max-w-[2250px] mx-auto">
       <Swiper navigation={true} modules={[Navigation, Autoplay]} loop effect="fade" autoplay className="mySwiper">
         {bannerImages.map(({ image }) => (
           <SwiperSlide key={image}>
@@ -26,7 +26,7 @@ const Slider = () => {
               <div className="absolute text-white bg-opacity-80 w-full h-full">
                 <div className="flex justify-between items-center w-full h-full bg-gradient-to-r from-[#000000] to-[#00000000]">
                   <div className="w-full lg:w-[50%]  ">
-                    <div className="ml-20 space-y-8">
+                    <div className="ml-20 space-y-2 md:space-y-6 lg:space-y-8">
                       <h2 className="md:text-2xl lg:text-4xl font-bold">
                         TRAVEL WITH THE TEAM <br /> TO AN AWAY GAME
                       </h2>
@@ -35,7 +35,7 @@ const Slider = () => {
                         updates on your favorite teams, athletes, and games. From thrilling game highlights to in-depth analysis, we've got you covered. Explore the dynamic world of sports with us and
                         never miss a beat.
                       </p>
-                      <button className="border px-4 py-2 rounded-md bg-[#35B7FF] font-semibold">
+                      <button className="border  text-white font-semibold px-2 py:1 md:px-4 md:py-2 rounded-md bg-[#35B7FF] ">
                         <Link href="/all-news">Show News </Link>
                       </button>
                     </div>

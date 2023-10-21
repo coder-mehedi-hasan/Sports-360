@@ -35,9 +35,9 @@ const NavData = () => {
 
   return (
     <div>
-      <ul className="flex gap-5 items-center justify-center">
+      <ul className="flex flex-col md:flex-row gap-2 md:gap-3 lg:gap-5 md:items-center md:justify-center">
         {items.map((item) => (
-          <li className={`text-lg font-medium hover:text-[#35B7FF] ${item.path === pathName ? "text-[#35B7FF] " : ""}`} key={item.path}>
+          <li className={` font-medium hover:text-[#35B7FF] ${item.path === pathName ? "text-[#35B7FF] " : ""}`} key={item.path}>
             <Link href={item.path}>{item.name}</Link>
           </li>
         ))}

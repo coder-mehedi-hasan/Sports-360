@@ -9,8 +9,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-[#262833]">
-      <div className="w-full max-w-[2250px] px-20 text-gray-300 py-12">
+    <div className="bg-[#262833] w-full max-w-[2250px] mx-auto">
+      <div className="w-full my-container text-gray-300 py-12">
         <div className="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-6">
           <div>
             <Image src="/logo.png" width={150} height={150} />

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.my-container {
-  @apply min-h-[calc(100vh-400px)] w-full max-w-[2250px] px-20;
-}
 
+.my-container {
+  @apply mx-auto w-full max-w-[2250px] px-2 md:px-8 lg:px-16;
+}
